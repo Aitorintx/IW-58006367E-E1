@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+.header {
+    position: relative;
+    background-image: url('Futbol.jpg');
+    background-size: cover;
+    background-position: top center;
+    height: 200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header h1 {
+    color: white;
+    font-size: 36px; /* Ajusta el tamaño del título según sea necesario */
+    margin: 0; /* Elimina el margen predeterminado para el título */
+    padding: 10px; /* Añade relleno alrededor del título si es necesario */
+}
+
+.banderaIzquierda, .banderaDerecha {
+    position: fixed;
+    top: 0;
+    width: 20%;
+    height: 100vh;
+    z-index: -1;
+}
+
+.banderaIzquierda {
+    background-image: url('Bandera.jpg');
+    background-size: contain;
+    background-position: left center;
+    left: 0;
+}
+
+.banderaDerecha {
+    background-image: url('Bandera.jpg');
+    background-size: contain;
+    background-position: right center;
+    right: 0;
+}
+
+.container {
+    width: 60%;
+    background-color: #f4f4f4;
+    margin: 0 auto;
+    padding: 20px;
+    
+    
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    min-height: calc(100vh - 100px); 
+}
+
+
+.container form {
+    margin-top: 5px;
+}
+
+.container label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333; /* Cambiar el color del texto de la etiqueta */
+}
+
+input[type="text"] {
+    width: 100%; 
+    box-sizing: border-box; 
+}
+.container input[type="date"]{
+    width: 100%; 
+    box-sizing: border-box; 
+}
+.container select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.container .radio-group {
+    display: flex;
+    justify-content: center;
+}
+
+.container .radio-label {
+    margin: 0 10px;
+}
+
+.container .button {
+    margin-top: 20px;
+}
+
+.container .button a, .button input {
+    background-color: #007BFF; /* Cambiar el color de fondo del botón */
+    color: #fff; /* Cambiar el color del texto del botón */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+
+.container .button a:hover, .button input:hover {
+    background-color: #0056b3;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footerNombres {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerNombres p {
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #ccc; 
+    margin: 10px 0;
+}
+.colorTitulos {
+    color: orange; 
+}
+table {
+    margin: 0 auto; 
+}
+.imageContainer{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.imageContainer img{
+    margin-right: 10px;
+    
+}
+
+.image{
+    text-align: center;
+    margin: 10px;
+}

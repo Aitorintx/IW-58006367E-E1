@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Amorebieta Campus Football Club</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="estetico.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Amorebieta Campus Football Club</h1>
+    </div>
+    <div class="banderaIzquierda"></div>
+    <div class="banderaDerecha"></div>
+    <div class="container">
+        <h2>Registro</h2>
+        <nav>
+            <div class="footerNombres">
+                <p><a href="Inicio.html">Inicio</a></p>
+                <p><a href="FormularioApuntarse.html">Formulario</a></p>
+                <p><a href="Horario.html">Horario</a></p>
+                <p><a href="Trabajador1.html">Profesores</a></p>
+            </div>
+            <hr>
+        </nav>
+        <fieldset>
+            <legend>Datos Jugador</legend>
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="fechaNacimiento">Fecha de nacimiento:</label>
+            <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+
+            <label for="posicion">Posición en la que juega:</label>
+            <select id="posicion" name="posicion">
+                <option value="portero">Portero</option>
+                <option value="defensor">Defensor</option>
+                <option value="mediocampista">Mediocampista</option>
+                <option value="delantero">Delantero</option>
+            </select>
+            
+
+            <label>Talla de ropa:</label>
+            <div class="radio-group">
+                
+                <label class="radio-label">
+                    <input type="radio" name="talla" value="s"> S
+                </label>
+                <label class="radio-label">
+                    <input type="radio" name="talla" value="m"> M
+                </label>
+                <label class="radio-label">
+                    <input type="radio" name="talla" value="l"> L
+                </label>
+            </div>
+            
+            <label>Comedor:</label>
+            <div class="radio-group">
+                
+                <label class="radio-label">
+                    <input type="radio" name="SI" value="si"> SI
+                </label>
+                <label class="radio-label">
+                    <input type="radio" name="NO" value="no"> NO
+                </label>
+            </div>
+        </fieldset>
+            
+        <div class="button">
+            <a href="DatosPersonales.html">Siguiente página</a>
+        </div>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Amorebieta Campus Football Club</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="estetico.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Amorebieta Campus Football Club</h1>
+    </div>
+    <div class="banderaIzquierda"></div>
+    <div class="banderaDerecha"></div>
+    <div class="container">
+        <h2>Registro Amorebieta Campus Football Club</h2>
+        <nav>
+            <div class="footerNombres">
+                <p><a href="Inicio.html">Inicio</a></p>
+                <p><a href="FormularioApuntarse.html">Formulario</a></p>
+                <p><a href="Horario.html">Horario</a></p>
+                <p><a href="Trabajador1.html">Profesores</a></p>
+            </div>
+            <hr>
+        </nav>
+        <fieldset>
+            <legend>Datos Pagador</legend>
+            <label for="nombreCompleto">Nombre Completo:</label>
+            <input type="text" id="nombreCompleto" name="nombreCompleto" required>
+
+            <label for="dni">DNI:</label>
+            <input type="text" id="dni" name="dni" maxlength="9" required>
+
+            <label for="iban">IBAN:</label>
+            <input type="text" id="iban" name="iban" maxlength="24" required>
+
+            <label>
+            Teléfono Móvil:
+            <input type="tel" id="telefonoMovil" name="telefonoMovil" pattern="[0-9]{9}" required>
+            </label>
+
+        </fieldset>
+            
+            
+        <label>
+            Acepto la política de privacidad:
+            <input type="checkbox" id="aceptoPolitica" name="aceptoPolitica" required>
+        </label>
+
+            <div class="button">
+                <a href="FormularioApuntarse.html">Volver</a>
+                <input type="submit" value="Enviar" class="button">
+            </div>
+        
+    </div>
+</body>
+</html>
